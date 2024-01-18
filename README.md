@@ -22,11 +22,11 @@ To run this project, you will need to add the environment variables which is lis
 ## Run Project Locally
 Clone the project
 ```sh
-$ git clone https://github.com/kirtan18/Stock_Market_Portfolio.git
+$ git clone https://github.com/jainiljakasaniya/StockMate.git
 ```
 Go to the project directory
 ```sh
-$ cd stock_market_portfolio
+$ cd StockMate
 ```
 Install dependencies
 ```sh
@@ -45,7 +45,6 @@ $ npm start
 - Database: CockroachDB, PostgreSQL
 - Server: Node.js, Express.js
 
-
 ## Features
 - API integration
 - User registration and login
@@ -53,5 +52,3 @@ $ npm start
 - Password security
 - Stock search and historical data
 - Email notification system
-
-

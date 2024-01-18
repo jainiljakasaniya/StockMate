@@ -12,10 +12,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 // start cronJob
-app.use((req, res, next) => {
-  job.start();
-  next();
-});
+job.start();
 
 // Routes
 app.use('/portfolio', router);

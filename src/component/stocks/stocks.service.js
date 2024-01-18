@@ -124,7 +124,7 @@ module.exports = {
     try {
       const triggerData = await stocksDal.getTriggersDal(dbClient);
       if (triggerData) {
-        triggerData.forEach(async item => {
+        await Promise.all(triggerData.map(async item => {
           const {
             stockId, symbol, companyName, category, alertPrice, userName, userEmail
           } = item;
@@ -143,7 +143,7 @@ module.exports = {
           if (result) {
             await stocksDal.deleteTriggerDal(dbClient, stockId);
           }
-        });
+        }));
       }
     } finally {
       dbClient.release();
